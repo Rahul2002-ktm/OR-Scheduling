@@ -1,0 +1,51 @@
+.text-animation {
+  animation: slideIn 5s forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.about-us {
+  text-align: justify;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-us h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-us p::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.about-us p::before {
+  content: "✨ ";
+  color: #f39c12;
+  font-size: 24px;
+  margin-right: 5px;
+}
